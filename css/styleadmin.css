@@ -1,0 +1,187 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+  background-color: #f0d3f3;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.container{
+  width: 100%;
+}
+
+.openbtn {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 2; /* Pastikan tombol di atas sidebar */
+  width: 20px;
+  font-size: 16px; /* Ukuran font tetap */
+  padding: 8px; /* Ubah padding sesuai kebutuhan */
+  background-color: transparent; /* Hapus warna latar belakang */
+  border: none; /* Hapus border */
+  flex: 1;
+}
+
+.openbtn:hover {
+    color: rgb(196, 69, 189);
+}
+.sidebar {
+  width: 215px;
+    background-color: #ffacd1;
+  position: fixed;
+  left: -215px;
+  top: 0;
+  bottom: 0;
+  transition: left 0.5s;
+  z-index: 1;
+  border-right: 3px solid #ffffff;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.openbtn {
+  position: fixed;
+  left: 10px;
+  top: 0;
+  z-index: 2; /* Pastikan tombol di atas sidebar */
+  width: 20px;
+  font-size: 16px; /* Ukuran font tetap */
+  padding: 8px; /* Ubah padding sesuai kebutuhan */
+  background-color: transparent; /* Hapus warna latar belakang */
+  border: none; /* Hapus border */
+}
+
+.sidebar-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 50px;
+    background-color: #e086af;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.sidebar ul {
+  margin-top: 2px;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  display: block;
+  margin-left: -80px;
+  border-bottom: 1px solid #ffffff;
+}
+.sidebar ul li a:hover {
+    color: rgb(196, 69, 189);
+    background-color: #f0a5c6;
+  transition: 0, 3s;
+}
+
+.selection {
+  position: relative;
+  width: auto;
+  padding: 0px 10px 10px 220px;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.sidebar ul li {
+  text-align: center;
+}
+
+.section form {
+  position: relative;
+  width: auto;
+}
+
+.form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .form-container form {
+        width: 48%; /* Atur lebar formulir sesuai kebutuhan */
+        margin-bottom: 20px;
+    }
+
+.section tr {
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px 10px 220px;
+}
+
+.table1 {
+  text-align: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #e8e8e8;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    background-color: #e793ce;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  border-radius: 20px;
+}
+
+button:hover {
+    background-color: #e681c7;
+}
+
+th {
+    background-color: #e793ce;
+  color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f38ed5;
+}
+
+th
+td {
+  padding: 10px;
+}
